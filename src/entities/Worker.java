@@ -8,6 +8,8 @@ public class Worker {
     private WorkerLevel level;
     private Double baseSalary;
 
+    private Department department;
+
     public Worker() {
     }
 
