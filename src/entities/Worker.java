@@ -70,12 +70,12 @@ public class Worker {
     }
 
     public double income(int year, int month) {
-        double um = baseSalary;
+        double sum = baseSalary;
         for (HourContract c : contracts) {
             int c_year = c.getDate().getYear();
             int c_month = c.getDate().getMonthValue();
-            if () {
-
+            if (year == c_year && month == c_month) {
+                sum += c.totalValue();
             }
         }
     }
