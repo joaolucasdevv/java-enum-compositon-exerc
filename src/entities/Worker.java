@@ -17,4 +17,16 @@ public class Worker {
         this.baseSalary = baseSalary;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public WorkerLevel getLevel() {
+        return level;
+    }
+
+    public Double getBaseSalary() {
+        return baseSalary;
+    }
+
 }
