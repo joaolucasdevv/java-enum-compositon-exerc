@@ -2,6 +2,8 @@ package entities;
 
 import entities.enums.WorkerLevel;
 
+import java.util.List;
+
 public class Worker {
 
     private String name;
@@ -9,6 +11,7 @@ public class Worker {
     private Double baseSalary;
 
     private Department department;
+    private List<HourContract> contracts;
 
     public Worker() {
     }
