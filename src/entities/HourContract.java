@@ -41,4 +41,9 @@ public class HourContract {
         this.hours = hours;
     }
 
+    public Double totalValue() {
+        double totalValue;
+        return totalValue = hours * valuePerHour;
+    }
+
 }
