@@ -61,13 +61,16 @@ public class Worker {
         this.department = department;
     }
 
-
     public void addContract(HourContract contract) {
         contracts.add(contract);
     }
 
     public void removeContract(HourContract contract) {
         contracts.remove(contract);
+    }
+
+    public double income(int year, int month) {
+        double um = baseSalary;
     }
 
 }
