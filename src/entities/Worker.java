@@ -56,4 +56,12 @@ public class Worker {
         this.baseSalary = baseSalary;
     }
 
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    public void setContracts(List<HourContract> contracts) {
+        this.contracts = contracts;
+    }
+
 }
