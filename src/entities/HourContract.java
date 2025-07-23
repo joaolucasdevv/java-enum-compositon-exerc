@@ -17,4 +17,16 @@ public class HourContract {
         this.hours = hours;
     }
 
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public Double getValuePerHour() {
+        return valuePerHour;
+    }
+
+    public Integer getHours() {
+        return hours;
+    }
+
 }
