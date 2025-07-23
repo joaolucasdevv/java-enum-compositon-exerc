@@ -8,4 +8,13 @@ public class Worker {
     private WorkerLevel level;
     private Double baseSalary;
 
+    public Worker() {
+    }
+
+    public Worker(String name, WorkerLevel level, Double baseSalary) {
+        this.name = name;
+        this.level = level;
+        this.baseSalary = baseSalary;
+    }
+
 }
