@@ -29,4 +29,16 @@ public class HourContract {
         return hours;
     }
 
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public void setValuePerHour(Double valuePerHour) {
+        this.valuePerHour = valuePerHour;
+    }
+
+    public void setHours(Integer hours) {
+        this.hours = hours;
+    }
+
 }
