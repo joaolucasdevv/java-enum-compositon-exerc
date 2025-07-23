@@ -72,7 +72,9 @@ public class Worker {
     public double income(int year, int month) {
         double um = baseSalary;
         for (HourContract c : contracts) {
-            if (c.getDate())
+            if () {
+
+            }
         }
     }
 
