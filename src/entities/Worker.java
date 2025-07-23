@@ -29,4 +29,16 @@ public class Worker {
         return baseSalary;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLevel(WorkerLevel level) {
+        this.level = level;
+    }
+
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+
 }
