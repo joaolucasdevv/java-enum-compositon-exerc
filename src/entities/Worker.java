@@ -72,6 +72,8 @@ public class Worker {
     public double income(int year, int month) {
         double um = baseSalary;
         for (HourContract c : contracts) {
+            int c_year = c.getDate().getMonthValue();
+            int c_month = c.getDate().getYear();
             if () {
 
             }
