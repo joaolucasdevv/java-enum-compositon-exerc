@@ -36,6 +36,14 @@ public class Worker {
         return baseSalary;
     }
 
+    public Department getDepartment() {
+        return department;
+    }
+
+    public List<HourContract> getContracts() {
+        return contracts;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
