@@ -4,6 +4,8 @@ import entities.Department;
 import entities.Worker;
 import entities.enums.WorkerLevel;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -29,7 +31,16 @@ public class Program {
 
         System.out.println("How many contracts to this worker?");
         int n = sc.nextInt();
-        for (int i=0; i<n; i++) {
+        for (int i=1; i<=n; i++) {
+            System.out.println("Enter contract #" + i + " data: " );
+
+            System.out.println("Date (DD/MM/YYYY): ");
+            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            LocalDate date = LocalDate.parse(sc.nextLine(), fmt);
+
+            System.out.println("Value per hour: ");
+            double valuePerHour = sc.nextDouble();
+
 
         }
 
