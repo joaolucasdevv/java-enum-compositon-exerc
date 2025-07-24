@@ -29,8 +29,9 @@ public class Program {
 
         System.out.println("How many contracts to this worker?");
         int n = sc.nextInt();
+        for (int i=0; i<n; i++) {
 
-
+        }
 
 
         sc.close();
