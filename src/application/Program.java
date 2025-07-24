@@ -1,5 +1,7 @@
 package application;
 
+import entities.enums.WorkerLevel;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -13,6 +15,13 @@ public class Program {
         String departmentName = sc.nextLine();
 
         System.out.println("Enter worker data:");
+        String name = sc.nextLine();
+
+        System.out.println("Level:");
+        WorkerLevel level = WorkerLevel.valueOf(sc.nextLine());
+
+        System.out.println("Base Salary:");
+        double baseSalary = sc.nextDouble();
 
 
 
