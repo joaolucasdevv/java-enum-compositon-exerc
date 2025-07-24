@@ -1,6 +1,7 @@
 package application;
 
 import entities.Department;
+import entities.HourContract;
 import entities.Worker;
 import entities.enums.WorkerLevel;
 
@@ -42,9 +43,13 @@ public class Program {
             double valuePerHour = sc.nextDouble();
 
             System.out.println("Duration (hour): ");
-            int hout = sc.nextInt();
-        }
+            int hour = sc.nextInt();
 
+            HourContract contract = new HourContract(date, valuePerHour, hour);
+
+            worker.addContract(contract);
+
+        }
 
         sc.close();
     }
