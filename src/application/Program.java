@@ -41,7 +41,8 @@ public class Program {
             System.out.println("Value per hour: ");
             double valuePerHour = sc.nextDouble();
 
-
+            System.out.println("Duration (hour): ");
+            int hout = sc.nextInt();
         }
 
 
