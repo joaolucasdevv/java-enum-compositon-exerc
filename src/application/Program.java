@@ -27,7 +27,7 @@ public class Program {
         System.out.print("Level: ");
         WorkerLevel level = WorkerLevel.valueOf(sc.nextLine());
 
-        System.out.print("Base Salary:");
+        System.out.print("Base Salary: ");
         double baseSalary = sc.nextDouble();
 
         Worker worker = new Worker(name, level, baseSalary, department);
@@ -53,6 +53,7 @@ public class Program {
             worker.addContract(contract);
 
         }
+        System.out.println();
 
         sc.nextLine();
         System.out.print("Enter month and year to calculate income (MM/YYYY): ");
