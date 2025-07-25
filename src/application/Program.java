@@ -21,6 +21,7 @@ public class Program {
         Department department = new Department(sc.nextLine());
 
         System.out.println("Enter worker data:");
+        System.out.println("Name:");
         String name = sc.nextLine();
 
         System.out.println("Level:");
