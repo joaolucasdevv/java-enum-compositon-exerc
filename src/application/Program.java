@@ -51,6 +51,11 @@ public class Program {
 
         }
 
+        System.out.println("Enter month and year to calculate income (MM/YYYY):");
+        DateTimeFormatter income = DateTimeFormatter.ofPattern("MM/yyyy");
+
+
+
         sc.close();
     }
 
