@@ -59,7 +59,8 @@ public class Program {
         int year = income.getYear();
 
         System.out.println("Name: " + worker.getName());
-
+        System.out.println("Department " + worker.getDepartment());
+        System.out.println("Incomer for " + income + ":" + worker.income(month, year));
 
         sc.close();
     }
