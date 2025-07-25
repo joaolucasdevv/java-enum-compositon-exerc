@@ -21,31 +21,31 @@ public class Program {
         Department department = new Department(sc.nextLine());
 
         System.out.println("Enter worker data:");
-        System.out.println("Name:");
+        System.out.print("Name: ");
         String name = sc.nextLine();
 
-        System.out.println("Level:");
+        System.out.print("Level: ");
         WorkerLevel level = WorkerLevel.valueOf(sc.nextLine());
 
-        System.out.println("Base Salary:");
+        System.out.print("Base Salary:");
         double baseSalary = sc.nextDouble();
 
         Worker worker = new Worker(name, level, baseSalary, department);
 
-        System.out.println("How many contracts to this worker?");
+        System.out.print("How many contracts to this worker? ");
         int n = sc.nextInt();
         for (int i=1; i<=n; i++) {
-            System.out.println("Enter contract #" + i + " data: " );
+            System.out.println("Enter contract #" + i + " data:" );
 
             sc.nextLine();
-            System.out.println("Date (DD/MM/YYYY): ");
+            System.out.print("Date (DD/MM/YYYY): ");
             DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             LocalDate date = LocalDate.parse(sc.nextLine(), fmt);
 
-            System.out.println("Value per hour: ");
+            System.out.print("Value per hour: ");
             double valuePerHour = sc.nextDouble();
 
-            System.out.println("Duration (hour): ");
+            System.out.print("Duration (hour): ");
             int hour = sc.nextInt();
 
             HourContract contract = new HourContract(date, valuePerHour, hour);
@@ -55,7 +55,7 @@ public class Program {
         }
 
         sc.nextLine();
-        System.out.println("Enter month and year to calculate income (MM/YYYY):");
+        System.out.print("Enter month and year to calculate income (MM/YYYY): ");
         DateTimeFormatter inc = DateTimeFormatter.ofPattern("MM/yyyy");
         YearMonth income = YearMonth.parse(sc.nextLine(), inc);
 
