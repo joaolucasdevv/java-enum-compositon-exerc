@@ -6,6 +6,7 @@ import entities.Worker;
 import entities.enums.WorkerLevel;
 
 import java.time.LocalDate;
+import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Scanner;
@@ -52,7 +53,10 @@ public class Program {
         }
 
         System.out.println("Enter month and year to calculate income (MM/YYYY):");
-        DateTimeFormatter income = DateTimeFormatter.ofPattern("MM/yyyy");
+        YearMonth income = YearMonth.parse(sc.nextLine());
+
+        int month = income.getMonthValue();
+        int year = income.getYear();
 
 
 
