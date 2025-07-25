@@ -37,6 +37,7 @@ public class Program {
         for (int i=1; i<=n; i++) {
             System.out.println("Enter contract #" + i + " data: " );
 
+            sc.nextLine();
             System.out.println("Date (DD/MM/YYYY): ");
             DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             LocalDate date = LocalDate.parse(sc.nextLine(), fmt);
@@ -53,15 +54,17 @@ public class Program {
 
         }
 
+        sc.nextLine();
         System.out.println("Enter month and year to calculate income (MM/YYYY):");
-        YearMonth income = YearMonth.parse(sc.nextLine());
+        DateTimeFormatter inc = DateTimeFormatter.ofPattern("MM/yyyy");
+        YearMonth income = YearMonth.parse(sc.nextLine(), inc);
 
         int month = income.getMonthValue();
         int year = income.getYear();
 
         System.out.println("Name: " + worker.getName());
-        System.out.println("Department " + worker.getDepartment());
-        System.out.println("Incomer for " + income + ":" + worker.income(month, year));
+        System.out.println("Department: " + worker.getDepartment().getName());
+        System.out.println("Incomer for: " + income.format(inc) + ":" + worker.income(month, year));
 
         sc.close();
     }
