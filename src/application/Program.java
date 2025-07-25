@@ -65,7 +65,7 @@ public class Program {
 
         System.out.println("Name: " + worker.getName());
         System.out.println("Department: " + worker.getDepartment().getName());
-        System.out.printf("Income for %s: %.2f%n", income.format(inc), worker.income(year, month));
+        System.out.printf("Income for %s: %.2f%n", income.format(inc), worker.income(month, year));
 
         sc.close();
     }
