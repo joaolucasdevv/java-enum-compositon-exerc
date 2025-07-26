@@ -18,19 +18,19 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter department's name: ");
-        Department department = new Department(sc.nextLine());
+        String department = sc.nextLine();
 
         System.out.println("Enter worker data:");
         System.out.print("Name: ");
         String name = sc.nextLine();
 
         System.out.print("Level: ");
-        WorkerLevel level = WorkerLevel.valueOf(sc.nextLine());
+        String level = sc.nextLine();
 
         System.out.print("Base Salary: ");
         double baseSalary = sc.nextDouble();
 
-        Worker worker = new Worker(name, level, baseSalary, department);
+        Worker worker = new Worker(name, WorkerLevel.valueOf(level), baseSalary, new Department(department));
 
         System.out.print("How many contracts to this worker? ");
         int n = sc.nextInt();
